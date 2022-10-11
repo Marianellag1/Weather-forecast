@@ -11,20 +11,20 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&a
 function displayTime() {
     var rightNow = moment().format('l');
     displayTimeEl.text(rightNow);
+    console.log(displayTimeEl);
 }
 
+// fetch(queryURL)
+// .then(function(response){
+// response.json();
+// })
+// .then(function(data){
+//     console.log(data)
+// })
 primarySearchbtnEl.addEventListener("click", function (e) {//search button works!
     e.preventDefault();
     alert("hello");
     let searchCity = searchCityEl.value;
     console.log(searchCity);// console log shows what ever user puts
-  
-    fetch(queryURL)
-    .then(function(response){
-    response.json();
-    })
-    .then(function(data){
-        console.log(data)
-    })
 })
 //kelvin formula: (K − 273.15) × 9/5 + 32 = °F

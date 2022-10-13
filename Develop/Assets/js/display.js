@@ -1,11 +1,11 @@
 // var searchCityEl = document.getElementById("city-search");
 // var primarySearchbtnEl = document.getElementById("search-btn");
-// var cityName = document.querySelector(".card-title");
-// var displayTimeEl = document.querySelector(".day-display");
-// var kelvinFor = (""-273.15)*9/5+32;
-// var APIKey = "bddbfb355365507f1fd422abd1989d50";
-// var city = 'Chicago';
-// var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
+var cityName = document.querySelector(".card-title");
+var displayTimeEl = document.querySelector(".day-display");
+var kelvinFor = (""-273.15)*9/5+32;
+var APIKey = "bddbfb355365507f1fd422abd1989d50";
+var city = 'Chicago';
+var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
 
 
 // function displayTime() {
@@ -28,3 +28,8 @@
 //     console.log(searchCity);// console log shows what ever user puts
 // })
 // //kelvin formula: (K − 273.15) × 9/5 + 32 = °F
+
+function getParams() {
+    var searchParamsArr = document.location.search.split('&');
+    console.log(searchParamsArr);
+}

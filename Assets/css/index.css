@@ -3,7 +3,7 @@ main {
 }
 
 .bg-color{
-    background-color:navy;
+    background-image: linear-gradient(6deg, #000080bd,navy, #171616);
     color:white;
 }
 
@@ -12,7 +12,9 @@ main {
 } */
 
 .col {
-    border-style: solid;
+    /* border-style: solid; */
     margin: 10px;
     list-style-type: none;
+    background-color: #33475a;
+    color: white;
 }

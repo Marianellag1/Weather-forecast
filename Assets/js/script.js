@@ -10,7 +10,7 @@ function handleSearchFormSubmit(event) {
         return;
     }
 
-    var queryString = './search-results.html?q=' + searchInputVal;
+    var queryString = './index.html?q=' + searchInputVal;
 
     location.assign(queryString);
 }

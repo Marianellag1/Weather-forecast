@@ -22,23 +22,28 @@
             <div class="row">
                 <div class="col-3">
                     <section>
-                        <form>
+                        <form class="container-one">
                             <div class="form-group">
-                                <label for="text"><strong>Search for a City:</strong></label>
-                                <input type="text" class="form-control" placeholder="Chicago"
-                                    id="exampleInputPassword1">
+                                <label for="text" id="city" ><strong>Search for a City:</strong></label>
+                                <input type="text" class="form-control" id="user-form" placeholder="Chicago">
                             </div>
                             <button type="submit" class="btn btn-primary btn-block" id="search">Submit</button>
                         </form>
                     </section>
                 </div>
-                <div class="col-9">
+                <tbody id="repo-table" class="mx-auto text-center"></tbody>
+                <div class="text-center pt-4">
+                    <button class="btn btn-danger" id="fetch-button">
+                      Click Me
+                    </button>
+                  </div>
+                <!-- <div class="col-9">
                     <section>
                         <div class="row">
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body display">
-                                        <h1><span id="date-display">(00/00/00)</span></h1>
+                                        <h1><span id="date-display">00:00:00</span></h1>
                                         <p class="card-text">Temp:</p>
                                         <p class="card-text">Wind:</p>
                                         <p class="card-text">Humidity:</p>
@@ -48,7 +53,7 @@
                         </div>
                         <br>
                         <div class="container">
-                            <h3>5-Day Forecast:</h3>
+                             <h3>5-Day Forecast:</h3>
                             <div class="row">
                                 <div class="col">
                                     <ul>
@@ -85,11 +90,11 @@
                                         <li>Humidity:</li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </section>
 
-                </div>
+                </div> -->
             </div>
         </div>
     </main>
@@ -98,6 +103,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 </body>
 

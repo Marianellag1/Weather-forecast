@@ -26,10 +26,11 @@
                         <form id="search-form" class="form w-100">
                             <h2 class="card-title">Search for a City:</h2>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="city-search" aria-describedby="emailHelp"
-                                placeholder="Chicago">
+                            <input type="text" class="form-control" id="city-search" aria-describedby="emailHelp" placeholder="Chicago">
                             </div>
                             <button type="submit" class="btn btn-primary btn-block" id="search-btn">Submit</button>
+                            <a class='dropdown-trigger btn' href='#' data-target='historyBtns'>Previous Searches</a>
+                            <ul id="historyBtns" class="dropdown-content"></ul>  
                         </form>
                     </div>
                 </div>

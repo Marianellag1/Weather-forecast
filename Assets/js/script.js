@@ -1,18 +1,30 @@
-var searchFormEl = document.querySelector('#search-form');
+let searchBtn = $('#search-btn');
+let userInput = $('#city-search');
+let historyButtons = $('#historyBtns');
 
-function handleSearchFormSubmit(event) {
-    event.preventDefault();
+function geCity() {
+    let userSearch = userInput.val();
+    let prevSearch = JSON.parse(localStorage.getItem("userInput")) || [];
 
-    var searchInputVal = document.querySelector('#city-search');
-
-    if (!searchInputVal) {
-        console.error('You need a search input value!');
-        return;
+    if (!prevSearch.includes(userInput.val())) {
+        prevSearch.push(userInput.val());
     }
-
-    var queryString = './index.html?q=' + searchInputVal;
-
-    location.assign(queryString);
+    localStorage.setItem("userInput", JSON.stringify(prevSearch));
+    location.assign('./display.html' + `q=${userSearch}`);
+    userInput.val("");
 }
 
-searchFormEl.addEventListener('submit', handleSearchFormSubmit);
+$(document).ready(function () {
+    let searchHistory = JSON.parse(localStorage.getItem('userInput'));
+    for (let i = 0; i < searchHistory.length; i++) {
+        let searchAgain = $('<li>').text(searchHistory[i]);
+        searchAgain.attr('class', 'prev-btns');
+        historyButtons.append(searchAgain);
+    }
+});
+
+searchBtn.on('click', geCity);
+historyButtons.on('click', '.prev-btns', function (ev) {
+    userInput.val($(ev.target).text());
+    geCity();
+});

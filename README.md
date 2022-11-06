@@ -1,17 +1,45 @@
-# Weather-forecast
-GIVEN a weather dashboard with form inputs:
+Live Link: 
 
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
---First added search bar
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
+# **Weather Forecast**
 
-WHEN I view current weather conditions for that city
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
+[![Licence](http://img.shields.io/badge/License-Unlicense-yellow.svg)](https://opensource.org/licenses/Unlicense)
 
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+---
 
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
+
+# **Table of Contents**
+
+-[Usage Information](#usage-information)
+-[License](#license)
+-[Test Instructions](#test-instructions)
+-[Question](#questions)
+
+
+---
+
+## **Description of the Project**
+User can see a 5-day accurate weather forecast of any U.S. city.
+
+
+
+## **Usage Information**
+User will enter any U.S. city in input field, and city should show up with name, temp and extras.
+
+
+
+
+## **Test Instructions**
+User can click on live link, and enter U.S. city.
+
+
+
+## **Questions**
+### If you have any questions about the project, please contact me at: mailto:marianellag400@gmail.com. 
+### You can also see my projects and works at: https://github.com/Marianellag1
+
+
+
+### **License**
+This project is licensed under:
+    Unlicense
+

@@ -10,7 +10,7 @@ function geCity() {
         prevSearch.push(userInput.val());
     }
     localStorage.setItem("userInput", JSON.stringify(prevSearch));
-    location.assign('./display.html' + `q=${userSearch}`);
+    location.assign('/display.html' + `q=${userSearch}`);
     userInput.val("");
 }
 

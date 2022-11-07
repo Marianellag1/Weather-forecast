@@ -5,12 +5,14 @@ let historyButtons = $('#historyBtns');
 function geCity() {
     let userSearch = userInput.val();
     let prevSearch = JSON.parse(localStorage.getItem("userInput")) || [];
+    let queryUrl = `./display.html?q=${userSearch}`;
+    console.log(queryUrl);
 
     if (!prevSearch.includes(userInput.val())) {
         prevSearch.push(userInput.val());
     }
     localStorage.setItem("userInput", JSON.stringify(prevSearch));
-    location.assign('/display.html' + `q=${userSearch}`);
+    location.assign(queryUrl);
     userInput.val("");
 }
 

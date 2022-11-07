@@ -12,13 +12,14 @@ Live Link:
 -[Usage Information](#usage-information)
 -[License](#license)
 -[Test Instructions](#test-instructions)
+-[Future Improvements](#future-improvements)
 -[Question](#questions)
 
 
 ---
 
 ## **Description of the Project**
-User can see a 5-day accurate weather forecast of any U.S. city.
+User can see a 5-day accurate weather forecast of any U.S. city. 
 
 
 
@@ -29,8 +30,15 @@ User will enter any U.S. city in input field, and city should show up with name,
 
 
 ## **Test Instructions**
-User can click on live link, and enter U.S. city.
+When user clicks live, user will be taken to forecast page were user can enter any U.S. city, taken to second page and displayed current data, plus 5-day forecast.
 
+
+
+
+## **Future Improvements**
+As user can notice, only one page of two show up in live. When user types in city, next page should load with all data displayed. Only in first script.js && index.html does saving to local storage display && real time update is shown. 
+As for display.js && display.html, does data show and connects, but undefined comes up instead of actual data. 
+The majority of what was asked for is there, only challenge was displaying the data instead of undefined.
 
 
 ## **Questions**

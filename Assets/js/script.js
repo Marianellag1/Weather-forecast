@@ -2,7 +2,8 @@ let searchBtn = $('#search-btn');
 let userInput = $('#city-search');
 let historyButtons = $('#historyBtns');
 
-function geCity() {
+function geCity(e) {
+    e.preventDefault();
     let userSearch = userInput.val();
     let prevSearch = JSON.parse(localStorage.getItem("userInput")) || [];
     let queryUrl = `./display.html?q=${userSearch}`;

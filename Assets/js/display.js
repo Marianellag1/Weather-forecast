@@ -5,7 +5,7 @@ let cityName = $('#city-name');
 let cityTemp = $('#city-temp');
 let windTemp = $('#wind-temp');
 // let userInput = $('#city-search');
-// let historyButtons = $('#historyBtns');
+let historyButtons = $('#historyBtns');
 let humidityTemp = $('#humidity-temp');
 // const kelvin = 0;-->math worked, only it started with 0, need solution to work with current date
 // const celsius = kelvin - 273;
@@ -28,12 +28,13 @@ userInput.val("");
 
 function getWeather(requestUrl) {
   fetch(requestUrl)
+  .then(res=>res.json())
   .then(function(data) {
     console.log(data);
-    cityName.text(`City: ${data.name}`);
-    cityTemp.text(`Temp: ${Math.round(data - 273.15)} + °F`);
-    windTemp.text(`Wind: ${data.speed} MPH`);
-    humidityTemp.text(`Humidity: ${data.humidity}%`);
+    cityName.text(`${data.name}`);
+    cityTemp.text(`Temp: ${Math.round((data.main.temp - 273.15)*9/5+32)}°F`);
+    windTemp.text(`Wind: ${data.wind.speed} MPH`);
+    humidityTemp.text(`Humidity: ${data.main.humidity}%`);
   });
 }
 // Math.round(temperature - 273.15)
@@ -41,7 +42,7 @@ $(document).ready(function () {
   let searchHistory = JSON.parse(localStorage.getItem('userInput'));
   for (let i = 0; i < searchHistory.length; i++) {
       let searchAgain = $('<li>').text(searchHistory[i]);
-      searchAgain.attr('class', 'prev-btns');
+      // searchAgain.attr('class', 'prev-btns');
       historyButtons.append(searchAgain);
   }
 });

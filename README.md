@@ -20,8 +20,7 @@ Live Link: https://marianellag1.github.io/Weather-forecast/
 
 ![Screenshot 2022-11-06 180346](https://user-images.githubusercontent.com/110939445/200203985-6289bde1-f85d-458e-aa9e-0e5025f56403.png)
 caption: Page user first sees, user enters city and will be taken to second page. Local storage works for searched cities.
-![Screenshot 2022-11-06 181302](https://user-images.githubusercontent.com/110939445/200203989-a920396d-1ebd-4b58-993d-0a420a8c82c8.png)
-Caption: Page user sees once city is entered, current data + city will show, as well as 5-day forecast.
+![image](https://user-images.githubusercontent.com/110939445/201779402-422776ac-188a-44c3-886b-7e1b31a70705.png)
 
 ## **Description of the Project**
 User can see a 5-day accurate weather forecast of any U.S. city. 
